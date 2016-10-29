@@ -5,7 +5,7 @@
 	<title>Каталог</title>
 </head>
 <body>
-	<header class="top-menu">
+	<header class="header">
 		<div class="conteiner">
 			<div class="main-logo">
 				<a href="#">
@@ -25,7 +25,7 @@
 			</div>
 			<nav class="main-navigation">
 				<ul>
-					<li class="catalog"><p>каталог товаров</p>
+					<li class="dropdown">каталог товаров
 						<ul>
 							<li><a href="#">Виртуальная реальность</a></li>
 							<li><a href="#">Моноподы для селфи</a></li>
@@ -42,8 +42,8 @@
 			</nav>
 		</div>
 	</header>
-	<main class="wrapper">
-		<div class="topic">
+	<main class="page">
+		<div class="container">
 			<h1>моноподы для селфи</h1>
 			<nav class="breadcrumbs">
 				<ul>
@@ -53,119 +53,117 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="filter">
-			<h2>фильтр:</h2>
-			<div class="sb-price">
-				<h3>Стоимость</h3>
+		<div class="catalog">
+			<aside class="filter">
+				<form class="form" action="#" method="get">
+					<h2>фильтр:</h2>
+					<div class="sb-price">
+						<b>Стоимость</b>
 
 
-			<!-- 	НЕЗНАЛ КАК СДЕЛАТЬ ТУТ! -->
+				    <!-- 	НЕЗНАЛ КАК СДЕЛАТЬ ТУТ! -->
 
-				<label for="price"></label>
-                    0 <input type="range" id="price" name="price" min="0" max="10000" step="20"> 10000
+						<label for="price"></label>
+	                    0 <input type="range" id="price" name="price" min="0" max="10000" step="20"> 10000
 
-						<!-- 	---------- -->
+					<!-- 	---------- -->
 
-			</div>
-			<div class="sb-color">
-				<h3>цвет</h3>
-				<form action="#" method="post">
-				    <ul>
-				    	<li>
-				    		<label>
-                                <input type="checkbox" name="name" checked>черный
-                            </label>
-				    	</li>
-				    	<li>
-				    		<label>
-                                <input type="checkbox" name="name">белый
-                            </label>
-				    	</li>
-				    	<li>
-				    		<label>
-                                <input type="checkbox" name="name" checked>синий
-                            </label>
-				    	</li>
-				    	<li>
-				    		<label>
-                                <input type="checkbox" name="name" checked>красный
-                            </label>
-				    	</li>
-				    	<li>
-				    		<label>
-                                <input type="checkbox" name="name">розовый
-                            </label>
-				    	</li>
-				    </ul>
+					</div>
+					<div class="sb-color">
+						<b>цвет</b>
+					    <ul>
+					    	<li>
+					    		<label>
+	                                <input type="checkbox" name="name" checked>черный
+	                            </label>
+					    	</li>
+					    	<li>
+					    		<label>
+	                                <input type="checkbox" name="name">белый
+	                            </label>
+					    	</li>
+					    	<li>
+					    		<label>
+	                                <input type="checkbox" name="name" checked>синий
+	                            </label>
+					    	</li>
+					    	<li>
+					    		<label>
+	                                <input type="checkbox" name="name" checked>красный
+	                            </label>
+					    	</li>
+					    	<li>
+					    		<label>
+	                                <input type="checkbox" name="name">розовый
+	                            </label>
+					    	</li>
+					    </ul>
+					</div>
+					<div class="sb-bluetooth">
+						<b>bluetooth</b>
+					    <ul>
+					    	<li>
+					    		<label>
+	                                <input type="radio" name="name" value="Есть" checked>Есть
+	                            </label>
+					    	</li>
+					    	<li>
+					    		<label>
+	                                <input type="radio" name="name" value="Нет">Нет
+	                            </label>
+					    	</li>
+					    </ul>
+					</div>
+					<a class="btn" href="#">показать</a>
 				</form>
+			</aside>
+			<div class="views">
+				<div class="top">
+					<ul>
+						<li class="name">сортировка:</li>
+						<li><a href="#">по цене</a></li>
+						<li><a href="#">по типу</a></li>
+						<li><a href="#">по популярности</a></li>
+						<li><a href="#"><span class="arrow arrow-up">arrow up</span></a></li>
+						<li><a href="#"><span class="arrow arrow-down">arrow down</span></a></li>
+					</ul>
+				</div>
 			</div>
-			<div>
-				<h3>bluetooth</h3>
-				<form action="#" method="post">
-				    <ul>
-				    	<li>
-				    		<label>
-                                <input type="radio" name="name" value="Есть" checked>Есть
-                            </label>
-				    	</li>
-				    	<li>
-				    		<label>
-                                <input type="radio" name="name" value="Нет">Нет
-                            </label>
-				    	</li>
-				    </ul>
-				</form>
+			<div class="items">
+				<div class="element">
+					<div class="img">
+						<img src="http://placehold.it/150x100" alt="item">
+					</div>
+						<a href="#">Любительская селфи-палка</a>
+						<span>500 руб.</span>
+				</div>
+				<div class="element">
+					<div class="img">
+						<img src="http://placehold.it/150x100" alt="item">
+					</div>
+						<a href="#">Профессиональная селфи-палка</a>
+						<span>1 500 руб.</span>
+				</div>
+				<div class="element">
+					<div class="img">
+						<img src="http://placehold.it/150x100" alt="item">
+					</div>
+						<a href="#">Непотопляемая селфи-палка</a>
+						<span>2 500 руб.</span>
+				</div>
+				<div class="element">
+					<div class="img">
+						<img src="http://placehold.it/150x100" alt="item">
+					</div>
+						<span class="new-icon"></span>
+						<a href="#">Селфи-палка «Следуй за мной»</a>
+						<span>4 900 руб.</span>
+				</div>
 			</div>
-			<a class="btn" href="#">показать</a>
-		</div>
-		<div class="sort">
-			<h2>сортировка:</h2>
-			<ul>
-				<li><a href="#">по цене</a></li>
-				<li><a href="#">по типу</a></li>
-				<li><a href="#">по популярности</a></li>
-
-
-			<!-- 	<li><a href="#">стрелка</a></li>     для стрелок вверх вниз подойдет?
-				<li><a href="#"></a>стрелка</li> -->
-
-
-			</ul>
-		</div>
-		<div class="items">
-			<article>
-				<a href="#">
-					<img src="http://placehold.it/150x100" alt="item">
-					<p>Любительская селфи-палка</p>
-					<span>500 руб.</span>
-				</a>
-			</article>
-			<article>
-				<a href="#">
-					<img src="http://placehold.it/150x100" alt="item">
-					<p>Профессиональная селфи-палка</p>
-					<span>1 500 руб.</span>
-				</a>
-			</article>
-			<article>
-				<a href="#">
-					<img src="http://placehold.it/150x100" alt="item">
-					<p>Непотопляемая селфи-палка</p>
-					<span>2 500 руб.</span>
-				</a>
-			</article>
-			<article>
-				<a href="#">
-					<img src="http://placehold.it/150x100" alt="item">
-					<span class="new-icon"></span>
-					<p>Селфи-палка «Следуй за мной»</p>
-					<span>4 900 руб.</span>
-				</a>
-			</article>
-			<article class="pager">
+			<article class="pagination">
 				<ul>
 					<li><a href="#">назад</a></li>
-					<li><a class="active" href="#">1</a></li>
+					<li class="active" href="#"><a>1</a></li>
 					<li><a href="#">2</a></li>
 					<li><a href="#">3</a></li>
 					<li><a href="#">вперед</a></li>
@@ -173,14 +171,13 @@
 			</article>
 		</div>
 	</main>
-	<footer class="main-footer">
+	<footer class="footer">
 		<div class="container">
 			<section class="footer-contacts">
                 <a href="#">
 					<img class="second-logo" src="http://placehold.it/150x100" alt="Девайс">
 				</a>
                 <p>г. Москва, ул. Строителей, 15</p>
-                <span class="line"></span>
             </section>
             <section class="footer-social">
                 <ul>
@@ -188,9 +185,9 @@
                 	<li><a href="#">гарантия</a></li>
                 	<li><a href="#">контакты</a></li>
                 </ul>
-                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-                <a class="social-btn social-btn-tvit" href="#">Твитер</a>
+                <a href="#"><span class="social social-fb">Фейсбук</span></a>
+                <a href="#"><span class="social social-inst">Инстаграм</span></a>
+                <a href="#"><span class="social social-tvit">Твитер</span></a>
             </section>
             <section class="footer-copyright">
                 <ul>
@@ -198,12 +195,11 @@
                 	<li><a href="#">сравнить</a></li>
                 	<li><a href="#">корзина</a></li>
                 </ul>
-                <p>Тел.: +7 (495) 495-95-95</p>
+                <a href="lel:" class="tel">Тел.: +7 (495) 495-95-95</a>
                 <a class="btn" href="https://htmlacademy.ru">
                 	<img class="academy" src="http://placehold.it/150x100" alt="HTML Academy">
                 </a>
             </section>
-		</div>
 	</footer>
 </body>
 </html>
